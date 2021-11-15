@@ -11,7 +11,7 @@ import java.time.Duration;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class MyFirstTest {
+public class LoginTest {
     private WebDriver driver;
     private WebDriverWait wait;
 
@@ -23,8 +23,10 @@ public class MyFirstTest {
 
     @Test
     public void myFirstTest(){
-        driver.get("http://google.com/");
-        wait.until(titleIs("Google"));
+        driver.get("http://localhost/litecart/admin");
+        driver.findElement(By.name("username")).sendKeys("admin");
+        driver.findElement(By.name("password")).sendKeys("admin");
+        driver.findElement(By.name("login")).click();
     }
 
     @AfterClass
