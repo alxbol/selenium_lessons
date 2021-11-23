@@ -21,9 +21,9 @@ public class Task8Test {
     public void task8Test() {
         driver.get("http://localhost/litecart/en/");
 
-        List<WebElement> productElementList = driver.findElements(By.cssSelector("li[class^='product']"));
+        List<WebElement> productElementList = driver.findElements(By.cssSelector("li.product"));
         for (WebElement productElement : productElementList) {
-            Assert.assertEquals(productElement.findElements(By.cssSelector("div[class^='sticker']")).size(), 1);
+            Assert.assertEquals(productElement.findElements(By.cssSelector("div.sticker")).size(), 1);
         }
     }
 
