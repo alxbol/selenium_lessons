@@ -1,3 +1,5 @@
+package tests;
+
 import models.Product;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
