@@ -41,7 +41,7 @@ public class Task12Test {
         driver.findElement(By.cssSelector("input[value='1-3']")).click();
         driver.findElement(By.cssSelector("input[name='quantity']")).clear();
         driver.findElement(By.cssSelector("input[name='quantity']")).sendKeys("1");
-        driver.findElement(By.cssSelector("input[name='new_images[]']")).sendKeys(new File("src/test/java/resources/product.jpg").getAbsolutePath());
+        driver.findElement(By.cssSelector("input[name='new_images[]']")).sendKeys(new File("src/test/resources/product.jpg").getAbsolutePath());
         driver.findElement(By.cssSelector("input[name='date_valid_from']")).sendKeys("01112021");
         driver.findElement(By.cssSelector("input[name='date_valid_from']")).sendKeys("01112023");
         driver.findElement(By.cssSelector("a[href='#tab-information']")).click();
